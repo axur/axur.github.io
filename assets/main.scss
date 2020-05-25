@@ -1,0 +1,81 @@
+---
+---
+
+@import "minima";
+
+html, body {
+  font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222222;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site-header {
+  border-top: 3px solid #FF5824;
+  border-bottom: 0px;
+}
+
+.site-title, .site-title:visited {
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: normal;
+  color: #222222;
+}
+
+.site-title::before {
+  content: url("logo.svg");
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+a, a:visited {
+  color: #FF5824;
+  transition: color 0.25s ease-in-out;
+}
+
+a.post-link {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #222222;
+}
+
+.site-nav .page-link {
+  color: #666666;
+}
+
+a:hover, a.page-link:hover  {
+  color: #FF5824;
+  text-decoration: none;
+}
+
+pre, code {
+  background-color: #fff8f8;
+  font-size: 14px;
+  border: 1px solid #ffe8e8;
+}
+
+.post-title {
+  color: #252525;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.post-content p {
+  color: #222222;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/GothamBook.woff2') format("woff2"), url('fonts/GothamBook.woff') format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/GothamMedium.woff2') format("woff2"), url('fonts/GothamMedium.woff') format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
