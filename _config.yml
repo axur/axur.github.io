@@ -21,17 +21,19 @@
 title: Axur Engineering blog
 short_title: Engineering blog
 author: Axur. Digital Risk Protection
-website: https://axur.com
+website:
+  link: www.axur.com
+  url: https://axur.com/
 email: contato@axur.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Reputation and trust take time to be built. But frauds and scams may put all
-  this hard work at risk. For this reason, we are devoted to monitoring the web
-  and searching for digital risks that might negatively affect your brand's
-  image.
+  Nossa missão é tornar a internet um lugar mais seguro. Desenvolvemos
+  tecnologia para encontrar e eliminar riscos digitais, preservando a relação de
+  confiança entre nossos clientes e seus públicos.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://engineering.axur.com" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin_username: Axur
 facebook_username: OneAxur
-twitter_username: axurone
+twitter_username: AxurOne
 youtube_username: AxurBrasil
 
 # Build settings

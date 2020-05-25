@@ -15,8 +15,16 @@
               {{ site.title | escape }}
             {%- endif -%}
             </li>
-            {%- if site.website -%}
-            <li><a href="{{ site.website }}">{{ site.website }}</a></li>
+            {%- if site.website.url -%}
+            <li>
+              <a href="{{ site.website.url }}">
+              {%- if site.website.link -%}
+                {{ site.website.link }}
+              {%- else -%}
+                {{ site.website.url }}
+              {%- endif -%}
+              </a>
+            </li>
             {%- endif -%}
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>

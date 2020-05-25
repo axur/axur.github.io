@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Lorem Ipsum"
+author: John Doe
 date:   2020-05-23 18:15:00 -0300
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis est nulla. Quisque sed mi id diam vulputate blandit. Aenean in iaculis velit, et venenatis lacus. Fusce ullamcorper pellentesque mauris id imperdiet. Suspendisse finibus egestas nisi, non molestie eros eleifend vitae. Etiam consectetur pulvinar massa cursus tincidunt. In quis nisl ut libero pulvinar pretium.
