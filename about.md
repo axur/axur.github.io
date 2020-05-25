@@ -8,4 +8,4 @@ Detecting and eliminating those online risks posing the greatest threat to your 
 
 You know the power of leveraging your digital presence. We’ve made it our mission to protect it. With the widest monitoring coverage and fastest industry reaction times whenever incidents occur, our number one priority is guarding & maintaining that invaluable trust between your company and the public.
 
-[Axur](https://www.axur.com)
+[Axur. Digital Risk Protection](https://www.axur.com)

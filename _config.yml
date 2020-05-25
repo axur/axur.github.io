@@ -18,7 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Engineering blog
+title: Axur Engineering blog
+short_title: Engineering blog
+author: Axur. Digital Risk Protection
+website: https://axur.com
 email: contato@axur.com
 description: >- # this means to ignore newlines until "baseurl:"
   Reputation and trust take time to be built. But frauds and scams may put all

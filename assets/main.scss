@@ -66,6 +66,10 @@ pre, code {
   color: #222222;
 }
 
+.contact-list li + li {
+    padding-top: 5px;
+}
+
 @font-face {
   font-family: 'Gotham';
   src: url('fonts/GothamBook.woff2') format("woff2"), url('fonts/GothamBook.woff') format("woff");
