@@ -1,0 +1,12 @@
+<div class="about-author">
+  <div class="author-image-block">
+    <div class="author-image" style="background: url('/assets/authors/{{ include.author.image }}'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+  </div>
+  <div class="author-info-block">
+    <h3 class="author-name">
+      <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+      <a href="https://www.linkedin.com/in/{{ include.author.linkedin }}">{{ include.author.name }}</a>
+    </h3>
+    <p class="author-description">{{ include.author.description }}</p>
+  </div>
+</div>

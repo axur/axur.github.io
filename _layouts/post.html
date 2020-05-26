@@ -18,6 +18,10 @@ layout: default
     {{ content }}
   </div>
 
+  {%- if page.author-info -%}
+    {% include author.html author=page.author-info %}
+  {%- endif -%}
+
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}

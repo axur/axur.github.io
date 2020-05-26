@@ -25,7 +25,7 @@ html, body {
   content: url("logo.svg");
   display: inline-block;
   position: relative;
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 a, a:visited {
@@ -64,6 +64,32 @@ pre, code {
 
 .post-content p {
   color: #222222;
+}
+
+.about-author {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 25px;
+  padding-top: 25px;
+}
+
+.author-image-block {
+  float:left;
+}
+
+.author-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.author-info-block {
+  float: left;
+  margin-left: 25px;
+}
+
+.author-description {
+  font-size: 15px;
+  color: #828282;
 }
 
 .contact-list li + li {
