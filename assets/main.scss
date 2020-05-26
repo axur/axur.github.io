@@ -11,6 +11,7 @@ html, body {
 
 .site-header {
   border-top: 3px solid #FF5824;
+  padding-top: 10px;
   border-bottom: 0px;
 }
 
@@ -74,17 +75,13 @@ pre, code {
 
 .author-image-block {
   float:left;
+  margin-right: 25px;
 }
 
 .author-image {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-}
-
-.author-info-block {
-  float: left;
-  margin-left: 25px;
 }
 
 .author-description {

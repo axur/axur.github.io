@@ -5,7 +5,7 @@ author: John Doe
 author-info:
   name: John Doe
   image: cage.jpg
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis est nulla. Quisque sed mi id diam vulputate blandit.
   linkedin: johndoe
 date:   2020-05-23 18:15:00 -0300
 ---
