@@ -14,7 +14,12 @@
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
-            </li>
+          </li>
+          <li class="p-name tagline">
+            {%- if site.tagline -%}
+              {{ site.tagline | escape }}
+            {%- endif -%}
+          </li>
             {%- if site.website.url -%}
             <li>
               <a href="{{ site.website.url }}">
