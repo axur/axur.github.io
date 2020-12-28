@@ -21,6 +21,10 @@ Este artigo está divido em duas partes. Nesta primeira parte, veremos alguns as
 Gerenciamento de Memória do Java. Na segunda parte, a ser publicada nas próximas semanas, abordaremos aspectos
 sobre o Gerenciamento de Memória do Java rodando em *containers Docker*.
 
+Para acessar a segunda parte do artigo, utilize o link abaixo:
+
+[Parte 2 - Gerenciamento de Memória no Java - Containers Docker]({% post_url 2020-12-28-gerenciamento-memoria-java-part2 %})
+
 
 # Memória de um Processo
 
@@ -189,6 +193,10 @@ patamar que, normalmente, não é ultrapassado, a menos que haja um *leak* de us
 Na parte 2 deste artigo, veremos alguns detalhes do comportamento do gerenciamento de memória de um processo Java
 rodando dentro de *containers Docker*, bem como algumas abordagens para configuração de memória, e também dicas
 de como tratar os problemas de memória mais comuns.
+
+Para acessar a segunda parte do artigo, utilize o link abaixo:
+
+[Parte 2 - Gerenciamento de Memória no Java - Containers Docker]({% post_url 2020-12-28-gerenciamento-memoria-java-part2 %})
 
 
 # Referências
