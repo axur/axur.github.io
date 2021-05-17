@@ -7,16 +7,22 @@ layout: default
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% include date.html date=page.date %}
+        {% include date.html date=page.date %} 
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+      <span> </span> • Tempo de leitura:  {% include read_time.html %}
+    </p>
   </header>
-
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+    <td style="white-space:nowrap;">
+        {% include share-buttons.html %}
+    </td> 
+
   </div>
+
 
   {%- if page.author-info -%}
     {% include author.html author=page.author-info %}
@@ -27,4 +33,5 @@ layout: default
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
 </article>
