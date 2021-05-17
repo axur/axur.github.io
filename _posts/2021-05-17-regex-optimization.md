@@ -404,7 +404,7 @@ private static void checkFirstNameWithRegex(String name, Pattern regex) {
 </details>
 <br/> 
 
-Neste código, procura-se o primeiro nome &quot;João&quot; em uma lista de nomes. O resultado apresenta variações de desempenho entre os conteúdos. Houve melhor desempenho no uso do método startsWith em vez de _regex_ no teste realizado.
+Neste código, procura-se o primeiro nome &quot;João&quot; em uma lista de nomes. O resultado apresenta variações de desempenho entre os conteúdos. Houve melhor desempenho no uso do método `startsWith` em vez de _regex_ no teste realizado.
 
 
 {% highlight text %}
@@ -420,7 +420,7 @@ Took 1745 ns - Matched: false
 Took 1529 ns - Matched: false
 {% endhighlight %}
 
-A performance _pode_ ser irrelevante para um cenário simples como esse. Entretanto, o método startsWith também deixa mais clara a intenção do código que a expressão regular. Isso deve ser considerado na solução, afinal, [_um código é muito mais lido que escrito_](https://www.goodreads.com/quotes/835238-indeed-the-ratio-of-time-spent-reading-versus-writing-is).
+A performance _pode_ ser irrelevante para um cenário simples como esse. Entretanto, o método `startsWith` também deixa mais clara a intenção do código que a expressão regular. Isso deve ser considerado na solução, afinal, [_um código é muito mais lido que escrito_](https://www.goodreads.com/quotes/835238-indeed-the-ratio-of-time-spent-reading-versus-writing-is).
 
 ## Conclusão
 
