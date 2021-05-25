@@ -106,7 +106,7 @@ private static long alwaysCompilingMethod(String regex, String content) {
     long startTime = System.currentTimeMillis();
     Pattern pattern = Pattern.compile(regex);
     Matcher matcher = pattern.matcher(content);
-    matcher.find();
+    sinkHole = matcher.find();
     long endTime = System.currentTimeMillis();
     return endTime - startTime;
 }
@@ -114,7 +114,7 @@ private static long alwaysCompilingMethod(String regex, String content) {
 private static long cachedPatternCompilingMethod(String regex, String content) {
     long startTime = System.currentTimeMillis();
     Matcher matcher = matcherFromCache(regex, content);
-    matcher.find();
+    sinkHole = matcher.find();
     long endTime = System.currentTimeMillis();
     return endTime - startTime;
 }
