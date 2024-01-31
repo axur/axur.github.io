@@ -30,8 +30,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Nossa missão é tornar a internet um lugar mais seguro. Desenvolvemos
   tecnologia para encontrar e eliminar riscos digitais, preservando a relação de
   confiança entre nossos clientes e seus públicos.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://engineering.axur.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://engineering.axur.com' # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: Axur
 facebook_username: AxurBrasil
 twitter_username: AxurBrasil
@@ -49,6 +49,13 @@ kramdown:
   syntax_highlighter: rouge
   input: GFM
 
+defaults:
+  - scope:
+      path: ''
+      type: 'config'
+    values:
+      http_headers:
+        X-Content-Type-Options: 'nosniff'
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
