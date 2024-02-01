@@ -41,7 +41,7 @@ A estratégia de comunicação por mensagens pode ser implementada de inúmeras 
 
 A título de exemplo, o código TypeScript abaixo utiliza APIs da DOM para enviar um evento de login para a aplicação. O evento enviado contém também o ID e o nome do usuário logado:
 
-```typescript
+{% highlight typescript %}
 const notifyLogin = (id: string, name: string) => {
   const loginEvent = new CustomEvent('event.login.success', {
     detail: { user: { id, name } }
@@ -49,11 +49,11 @@ const notifyLogin = (id: string, name: string) => {
 
   document.dispatchEvent(loginEvent);
 }
-```
+{% endhighlight %}
 
 Em outro ponto da aplicação, um *microfrontend* interessado no evento de login pode registrar um handler, tratando o evento conforme necessário:
 
-```typescript
+{% highlight typescript %}
 const loginHandler = (event: CustomEvent) => {
   const id = event.detail.user.id;
   const name = event.detail.user.name;
@@ -61,13 +61,13 @@ const loginHandler = (event: CustomEvent) => {
 }
 
 document.addEventListener('event.login.success', loginHandler);
-```
+{% endhighlight %}
 
 A partir desse ponto, o `loginHandler` será invocado sempre que um evento de tipo `'event.login.success'` chegar ao objeto `document`. O envio de um evento de login pode ser feito chamando a função `notifyLogin` definida anteriormente:
 
-```typescript
+{% highlight typescript %}
 notifyLogin('123', 'Jane Doe');
-```
+{% endhighlight %}
 
 Na implementação acima, é importante notar que os dois módulos (produtor e consumidor) são completamente independentes. O acoplamento entre produtor e consumidor de eventos se dá apenas pelo contrato entre os dois módulos, que pode ser interpretado como uma API definida pelo emissor. Essa API define o tipo do evento e o formato do payload, mas não faz nenhuma suposição quanto à existência de consumidores. Da mesma forma, consumidores de eventos simplesmente respeitam o contrato definido sem fazer nenhuma suposição quanto à existência de um emissor. Essa característica garante o baixo acoplamento entre os dois módulos.
 
