@@ -7,7 +7,7 @@ author-info:
   image: guilherme-alles.jpg
   description: Engeineering Manager e desenvolvedor na Axur. Mestre em computação pela Universidade Federal do Rio Grande do Sul.
   linkedin: guilherme-rezende-alles-73730110a
-date: 2024-02-01 12:00:00 -0300
+date: 2024-02-01 00:50:00 -0300
 ---
 
 No universo do desenvolvimento de aplicações web, enfrentamos desafios crescentes em relação à complexidade das aplicações. Especificamente no contexto de frontend, não é suficiente que uma aplicação seja visualmente agradável e intuitiva; a aplicação precisa encapsular e interpretar uma grande quantidade de conceitos de negócio, e apresentá-los a usuários de forma competente.
