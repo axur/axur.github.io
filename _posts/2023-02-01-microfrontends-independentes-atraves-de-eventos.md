@@ -5,7 +5,7 @@ author: Guilherme Rezende Alles
 author-info:
   name: Guilherme Rezende Alles
   image: guilherme-alles.jpg
-  description: Engeineering Manager e desenvolvedor na Axur. Mestre em computação pela Universidade Federal do Rio Grande do Sul.
+  description: Engineering Manager e desenvolvedor na Axur. Mestre em computação pela Universidade Federal do Rio Grande do Sul.
   linkedin: guilherme-rezende-alles-73730110a
 date: 2024-02-01 00:50:00 -0300
 ---
