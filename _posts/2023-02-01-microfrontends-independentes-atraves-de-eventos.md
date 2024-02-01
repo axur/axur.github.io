@@ -28,8 +28,8 @@ Uma solução possível é estabelecer um canal de comunicação que não requer
 
 Essencialmente, definimos dois tipos de mensagens, baseados no padrão de [arquiteturas orientadas a eventos](https://en.wikipedia.org/wiki/Event-driven_architecture):
 
-0. Comandos: São enviados de qualquer remetente para um destinatário específico. Comandos indicam claramente a ação que deve ser realizada pelo destinatário, e são escritos usando a linguagem de domínio do destinatário. A título de exemplo, uma solicitação de mudança de rota pode ser tratada como um comando.
-0. Eventos: Diferentemente de comandos, eventos são emitidos por um remetente específico e podem ser capturados por quaisquer destinatários interessados. Eventos indicam acontecimentos relevantes, e são escritos em termos do domínio do remetente. Isso garante que o remetente não precise conhecer detalhes de implementação dos destinatários. A título de exemplo, um evento pode ser disparado quando o resultado de uma lista é renderizado na tela ou quando um usuário realiza login com sucesso.
+0. **Comandos:** São enviados de qualquer remetente para um destinatário específico. Comandos indicam claramente a ação que deve ser realizada pelo destinatário, e são escritos usando a linguagem de domínio do destinatário. A título de exemplo, uma solicitação de mudança de rota pode ser tratada como um comando.
+0. **Eventos:** Diferentemente de comandos, eventos são emitidos por um remetente específico e podem ser capturados por quaisquer destinatários interessados. Eventos indicam acontecimentos relevantes, e são escritos em termos do domínio do remetente. Isso garante que o remetente não precise conhecer detalhes de implementação dos destinatários. A título de exemplo, um evento pode ser disparado quando o resultado de uma lista é renderizado na tela ou quando um usuário realiza login com sucesso.
 
 # Consumo de eventos
 
@@ -57,7 +57,7 @@ Em outro ponto da aplicação, um *microfrontend* interessado no evento de login
 const loginHandler = (event: CustomEvent) => {
   const id = event.detail.user.id;
   const name = event.detail.user.name;
-  alert(`User ${name} (id ${userId}) just logged in!`);
+  alert(`User ${name} (id ${id}) just logged in!`);
 }
 
 document.addEventListener('event.login.success', loginHandler);
@@ -69,7 +69,7 @@ A partir desse ponto, o `loginHandler` será invocado sempre que um evento de ti
 notifyLogin('123', 'Jane Doe');
 {% endhighlight %}
 
-Na implementação acima, é importante notar que os dois módulos (produtor e consumidor) são completamente independentes. O acoplamento entre produtor e consumidor de eventos se dá apenas pelo contrato entre os dois módulos, que pode ser interpretado como uma API definida pelo emissor. Essa API define o tipo do evento e o formato do payload, mas não faz nenhuma suposição quanto à existência de consumidores. Da mesma forma, consumidores de eventos simplesmente respeitam o contrato definido sem fazer nenhuma suposição quanto à existência de um emissor. Essa característica garante o baixo acoplamento entre os dois módulos.
+Na implementação acima, é importante notar que os dois módulos (produtor e consumidor) são completamente independentes. O acoplamento entre produtor e consumidor de eventos se dá apenas pelo contrato entre os dois módulos, que pode ser interpretado como uma API definida pelo emissor. Essa API define o tipo do evento e o formato do *payload*, mas não faz nenhuma suposição quanto à existência de consumidores. Da mesma forma, consumidores de eventos simplesmente respeitam o contrato definido sem fazer nenhuma suposição quanto à existência de um emissor. Essa característica garante o baixo acoplamento entre os dois módulos.
 
 Vale notar também que essa implementação é apenas um exemplo de como atingir o baixo acoplamento, utilizando APIs amplamente disponíveis em navegadores. Como já mencionado, existem diferentes formas de implementar a comunicação através de mensagens, e até mesmo bibliotecas que disponibilizam um ferramental similar para lidar com produtores e consumidores.
 
