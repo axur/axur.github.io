@@ -48,14 +48,6 @@ google_analytics: UA-167519399-1
 kramdown:
   syntax_highlighter: rouge
   input: GFM
-
-defaults:
-  - scope:
-      path: ''
-      type: 'config'
-    values:
-      http_headers:
-        X-Content-Type-Options: 'nosniff'
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
