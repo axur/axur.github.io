@@ -37,10 +37,6 @@ facebook_username: AxurBrasil
 twitter_username: AxurBrasil
 youtube_username: AxurBrasil
 
-defaults:
-  _headers:
-    Content-Security-Policy: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';"
-
 # Build settings
 show_excerpts: true
 theme: minima
