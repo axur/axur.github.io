@@ -1,7 +1,7 @@
 const csp = {
   name: 'Content-Security-Policy',
   content:
-    "frame-ancestors 'self'; worker-src 'self' 'unsafe-eval' blob:; object-src 'none'; script-src 'self' 'unsafe-inline' *googletagmanager.com *google-analytics.com; style-src * 'unsafe-inline' 'unsafe-eval'; script-src-elem 'self' 'unsafe-inline'",
+    "worker-src 'self' 'unsafe-eval' blob:; object-src 'none'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src * 'unsafe-inline' 'unsafe-eval'; script-src-elem 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;",
 };
 
 const hsts = {
