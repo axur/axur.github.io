@@ -18,7 +18,6 @@ Contamos com os benefícios proporcionados pela entrega contínua, código limpo
 
 Desafiar os crimes cibernéticos e ajudar na construção de produtos que estejam sempre à frente requer uma equipe alinhada com a nossa cultura e valores.
 
-
 ### Quer trabalhar no time de Engineering da Axur?
 
-Conheça as nossas oportunidades na nossa [página de carreiras](http://careers.axur.com/).
+Conheça as nossas oportunidades na nossa [página de carreiras](https://start.axur.com/pt-br/talentos/).
