@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Microfrontends independentes através de eventos
+lang: pt
 author: Guilherme Rezende Alles
 author-info:
   name: Guilherme Rezende Alles

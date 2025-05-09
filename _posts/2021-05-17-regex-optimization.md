@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Otimizando o uso de Expressões Regulares (Regex)
+lang: pt
 author: Eduardo Stein Brito
 author-info:
   name: Eduardo Stein Brito

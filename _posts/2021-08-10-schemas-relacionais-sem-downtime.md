@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Transformação de schemas relacionais sem downtime
+lang: pt
 author: Matheus Rodrigues da Silva
 author-info:
   name: Matheus Rodrigues da Silva

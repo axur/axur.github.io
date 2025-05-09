@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Pilares técnicos da engenharia de software na Axur"
+lang: pt
 author: Rafael Munaretti
 author-info:
   name: Rafael Munaretti

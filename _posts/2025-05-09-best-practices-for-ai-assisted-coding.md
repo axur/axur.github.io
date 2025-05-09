@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "Best Practices for AI-Assisted Coding"
+lang: en
 author: Guilherme Alles
 author-info:
   name: Guilherme Rezende Alles
   image: guilherme-alles.jpg
   description: Engineering Manager and software developer at Axur.
   linkedin: guilherme-rezende-alles-73730110a
-date:   2025-05-09 08:00:00 -0300
+date: 2025-05-09 08:00:00 -0300
 ---
 
 At Axur, we're always looking for new ways to improve the productivity and efficiency of our development team. With AI quickly changing the landscape of software engineering, it can sometimes be hard to separate genuine breakthroughs from mere hype. By experimenting extensively with AI coding tools like Cursor, Junie, and Windsurf, we've identified several practical strategies that consistently deliver good results.

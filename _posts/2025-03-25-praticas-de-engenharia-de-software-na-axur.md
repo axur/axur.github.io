@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Práticas de engenharia de software na Axur"
+lang: pt
 author: Bruno Toresan
 author-info:
   name: Bruno Toresan

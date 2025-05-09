@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Micro-benchmarks em Java
+lang: pt
 author: Jose Ferreira
 author-info:
   name: Jose Ferreira
