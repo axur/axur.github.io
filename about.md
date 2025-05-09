@@ -2,6 +2,7 @@
 layout: page
 title: Sobre a Axur
 permalink: /about/
+lang: pt
 ---
 
 A Axur é líder na América Latina em monitoramento e reação a riscos digitais.

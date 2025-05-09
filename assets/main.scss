@@ -106,3 +106,20 @@ pre, code {
   font-weight: 500;
   font-style: normal;
 }
+
+.language-selector {
+  display: block;
+  margin-left: 20px;
+  
+  .language {
+    margin: 0 5px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 14px;
+    
+    &.active {
+      font-weight: bold;
+      color: #333;
+    }
+  }
+}

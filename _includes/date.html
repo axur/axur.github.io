@@ -1,3 +1,7 @@
-{% assign months = "janeiro,fevereiro,março,abril,maio,junho,julho,agosto,setembro,outubro,novembro,dezembro" | split: "," %}
-{% assign month_number = include.date | date: "%-m" | minus: 1 %}
-{{ include.date | date: "%-d" }} de {{ months[month_number] }} de {{ include.date | date: "%Y" }}
+{% if page.lang == 'en' or page.url contains '/en/' or post.lang == 'en' %}
+  {{ include.date | date: "%B %-d, %Y" }}
+{% else %}
+  {% assign months = "janeiro,fevereiro,março,abril,maio,junho,julho,agosto,setembro,outubro,novembro,dezembro" | split: "," %}
+  {% assign month_number = include.date | date: "%-m" | minus: 1 %}
+  {{ include.date | date: "%-d" }} de {{ months[month_number] }} de {{ include.date | date: "%Y" }}
+{% endif %}

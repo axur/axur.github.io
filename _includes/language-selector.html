@@ -1,0 +1,19 @@
+<div class="language-selector">
+  {% assign current_page_url = page.url %}
+  
+  {% if page.url contains '/en/' or page.lang == 'en' %}
+    <span class="language active">English</span>
+    {% if page.url contains '/en/about/' %}
+      <a href="{{ '/about/' | relative_url }}" class="language">Português</a>
+    {% else %}
+      <a href="{{ '/' | relative_url }}" class="language">Português</a>
+    {% endif %}
+  {% else %}
+    {% if page.url contains '/about/' %}
+      <a href="{{ '/en/about/' | relative_url }}" class="language">English</a>
+    {% else %}
+      <a href="{{ '/en/' | relative_url }}" class="language">English</a>
+    {% endif %}
+    <span class="language active">Português</span>
+  {% endif %}
+</div> 

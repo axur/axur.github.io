@@ -5,6 +5,12 @@
 
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
+    {% if page.lang == 'en' or page.url contains '/en/' %}
+      {% assign t = site.data.translations.en %}
+    {% else %}
+      {% assign t = site.data.translations.pt %}
+    {% endif %}
+
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
@@ -16,9 +22,7 @@
             {%- endif -%}
           </li>
           <li class="p-name tagline">
-            {%- if site.tagline -%}
-              {{ site.tagline | escape }}
-            {%- endif -%}
+            {{ t.tagline }}
           </li>
             {%- if site.website.url -%}
             <li>
@@ -42,7 +46,7 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+        <p>{{- t.site_description | escape -}}</p>
       </div>
     </div>
 
